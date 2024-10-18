@@ -1,0 +1,138 @@
+.boddy {
+    background-color: purple;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+    margin-bottom: 20px;
+  }
+
+  @keyframes popup {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .title {
+    font-size: 100px;
+    color: orange;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    line-height: 100px;
+    margin: 0;
+    animation: popup 1.5s infinite; /* Added animation */
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .input-container {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .addbutton {
+    background-color: orange;
+    color: white;
+    border-radius: 3px;
+    border-style: none;
+    width: 50px;
+    height: 35px;
+    margin-left: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s, transform 0.5s;
+  }
+
+  .addbutton:hover {
+    background-color: #ff7f00;
+    transform: scale(1.05);
+  }
+
+  .type-bar {
+    padding: 10px;
+    width: 300px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.5s, transform 0.5s;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+  }
+
+  .type-bar:hover {
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+
+  .list1 {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 400px;
+  }
+
+  .listitemm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+    font-family: "Verdana", sans-serif;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+  }
+
+  .task-text {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Verdana", sans-serif;
+    color: white;
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  .delete1,
+  .deleteitemm {
+    background-color: orange;
+    color: white;
+    border-radius: 3px;
+    border-style: none;
+    width: 70px;
+    height: 35px;
+    margin-left: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s, transform 0.5s;
+  }
+
+  .delete1:hover,
+  .deleteitemm:hover {
+    background-color: #ff7f00;
+    transform: scale(1.05);
+  }
